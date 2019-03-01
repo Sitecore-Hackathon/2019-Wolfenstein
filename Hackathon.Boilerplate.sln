@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{17DD5718-6E13-4F2C-9738-B410396D4552}"
 EndProject
@@ -14,7 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
 		nuget.config = nuget.config
+		package.json = package.json
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -29,12 +32,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D27C83
 		documentation\images\hackathon.png = documentation\images\hackathon.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HackathonWeb", "HackathonWeb", "{D31DB432-D66C-43CF-B1E2-3E82B18EE95B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonWeb.Website", "src\Project\HackathonWeb\HackathonWeb.Website\HackathonWeb.Website.csproj", "{40DDDC6B-FDD8-485F-B614-E6E11E43FCD9}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40DDDC6B-FDD8-485F-B614-E6E11E43FCD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40DDDC6B-FDD8-485F-B614-E6E11E43FCD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40DDDC6B-FDD8-485F-B614-E6E11E43FCD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40DDDC6B-FDD8-485F-B614-E6E11E43FCD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854} = {DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}
+		{D31DB432-D66C-43CF-B1E2-3E82B18EE95B} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
+		{40DDDC6B-FDD8-485F-B614-E6E11E43FCD9} = {D31DB432-D66C-43CF-B1E2-3E82B18EE95B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}

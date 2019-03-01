@@ -1,0 +1,18 @@
+﻿@using Sitecore.Mvc 
+@using Sitecore.Mvc.Analytics.Extensions
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="~/Scripts/sitecoredev.website.min.js"></script>
+    <title>@Html.Sitecore().Field("title", new { DisableWebEdit = true })</title>
+    <link rel="stylesheet" href="~/Content/sitecoredev.website.min.css"/>
+    @Html.Sitecore().VisitorIdentification()
+</head>
+<body class="@(Sitecore.Context.PageMode.IsExperienceEditor ? "edit-mode" : string.Empty)">
+<h1>@Html.Sitecore().Field("title")</h1>
+<div>
+    @Html.Sitecore().Placeholder("main")
+</div>
+</body>
+</html>
