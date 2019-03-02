@@ -48,6 +48,7 @@
         <x-item>/master/sitecore/layout/Renderings/Feature/Media/Image Filter Component/{F0A1E44E-777C-4B84-A362-85F4D4CD2F5D}/invariant/0</x-item>
         <x-item>/master/sitecore/content/Hackathon/SXA Website/Presentation/Available Renderings/Media/{28A65635-2408-4CB9-8FF2-03F0B672B9EF}/invariant/0</x-item>
         <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image6/{229EDF0E-ACAA-4731-8C5E-DE5460BDAEB9}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/{65EB3D0F-9936-4864-BCAB-EBC605C2F894}/invariant/0</x-item>
       </Entries>
       <SkipVersions>False</SkipVersions>
       <Converter>
