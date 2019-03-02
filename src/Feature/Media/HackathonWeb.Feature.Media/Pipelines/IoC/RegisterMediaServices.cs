@@ -1,8 +1,8 @@
 ﻿using HackathonWeb.Feature.Media.Controllers;
+using HackathonWeb.Feature.Media.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.DependencyInjection;
-using Sitecore.XA.Feature.Media.Repositories;
-using ImageRepository = HackathonWeb.Feature.Media.Repositories.ImageRepository;
+using SimpleComponentRepository = HackathonWeb.Feature.Media.Repositories.SimpleComponentRepository;
 
 namespace HackathonWeb.Feature.Media.Pipelines.IoC
 {
@@ -10,8 +10,8 @@ namespace HackathonWeb.Feature.Media.Pipelines.IoC
     {
         public void Configure(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddTransient<IImageRepository, ImageRepository>();
-            serviceCollection.AddTransient<MediaImageController>();
+            serviceCollection.AddTransient<ISimpleComponentRepository, SimpleComponentRepository>();
+            serviceCollection.AddTransient<SimpleComponentController>();
         }
     }
 }

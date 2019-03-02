@@ -1,0 +1,11 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model HackathonWeb.Feature.Media.Models.SimpleComponentModel
+
+<div @Html.Sxa().Component("simple-component", Model.Attributes)>
+    <div class="component-content">
+        <h1>You are on @Model.Title page</h1>
+    </div>
+</div>
