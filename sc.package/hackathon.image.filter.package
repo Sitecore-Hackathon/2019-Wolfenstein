@@ -1,0 +1,101 @@
+<project site="sc910.sc" format="Zip Package" targetfilefolder="wwwroot">
+  <Metadata>
+    <metadata>
+      <PackageName />
+      <Author />
+      <Version />
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/{80B25566-EAD1-461B-840C-F1B221B310D2}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Face Detection/{DE0A9A04-5166-4D60-93CC-5B67D09E1E47}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Gray/{7F5CAFB5-8F95-48F3-9915-9D244E601FF2}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Invert/{9E1D394A-D29F-460B-A743-AF9CDBDECF01}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Median/{20C2E4EE-1661-41C7-9CE3-3139F8CD70D1}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Resize/{AF374C3B-30B3-47D8-B9F2-9961AF2F4648}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Rotate/{DB9F2A5E-BE6E-4ED7-B6E8-93503285280B}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Texture Sepia/{624B1DF9-22CB-48FA-B86E-1FBEF3B47E01}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Textured Hue/{4BB678F4-E030-41AF-9290-39629DA34E21}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/{B1BA846C-BDE8-43B7-B189-DC795D4E73A9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/{6B96D60E-8F6A-4F3D-BE7A-2EDFDE3EF069}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/HasImageCaption/{F1595CB5-B167-43B3-8631-8BFE205AD08D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/HasImageDescription/{7BBE8EF8-7396-45C0-8214-1AC38C7B05CB}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/Image/{4D208A4A-8084-46A1-9988-7FCE6018923A}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/Filter/{B02850F5-A946-4881-823A-364666D2872D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/Angle/{DC124062-C675-4209-8585-38458C19E891}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/Height/{2D1F3937-198E-488C-BA20-0C329D0E3B8B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/Width/{D45AEAB5-662F-4A18-B180-48DA5C85D539}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/__Standard Values/{F054E068-188F-4074-A309-0B79B9F6A853}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Family/{22056BA9-DF25-4E7A-8C9C-27E427FF2654}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image4/{B4783AD6-16D7-44F9-A60D-E7594F0291CE}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image3/{80CE5F96-5C69-406C-A7B4-B393E4FFB113}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/ImageNoise/{D1C1D007-9F44-446C-A60E-0309ED2C1907}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image7/{B2876B1A-FEC5-4D02-AF53-34AE58D7F118}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image5/{DCE45CC3-7EDA-4A9C-86D6-6890C4C90A0D}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image2/{F7401F10-C632-4666-8723-1A32E8C492F2}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Media/{0F5A6357-2DBA-4820-A03E-7240F3CED16F}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Media/Image Filter Component/{F0A1E44E-777C-4B84-A362-85F4D4CD2F5D}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Presentation/Available Renderings/Media/{28A65635-2408-4CB9-8FF2-03F0B672B9EF}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image6/{229EDF0E-ACAA-4731-8C5E-DE5460BDAEB9}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Items</Name>
+    </xitems>
+    <xfiles>
+      <Entries />
+      <Converter>
+        <FileToEntryConverter>
+          <Root />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
