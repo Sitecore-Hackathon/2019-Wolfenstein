@@ -8,45 +8,25 @@ Examples of things to include are the following.
 
 ## Summary
 
-**Category:** Hackathon Category
+**Category:** Best extension of the editing experience for SXA in Experience Editor
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+The purpose of this module is allow to the final user add images and edit them, like changing colors, add noise correction filters, add texture filters and face detection.
 
 ## Pre-requisites
 
-Does your module rely on other Sitecore modules or frameworks?
-
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+Download this packages
+-Sitecore PowerShell Extensions-5.0.zip
+-Sitecore Experience Accelerator 1.8 rev. 181112 for 9.1.zip
 
 ## Installation
 
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
-
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
+Install these packages in the same order listed above. then install this package in order to configurare our module.
+-hackathon.image.filter.zip
 
 ## Configuration
 
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
-
-Remember you are using Markdown, you can provide code samples too:
-
-```xml
-<?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
-  </sitecore>
-</configuration>
-```
+once both packages are installed, you must insert Tenant site in the content node and then configure it following the assistant.
+The name of tenant node have to be Hackathon, then the website name have to be SAX Website.
 
 ## Usage
 
