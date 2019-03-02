@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5B37862-7CFA-4C16-B443-BE146E08C35B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HackathonWeb.Feature.Media</RootNamespace>
+    <AssemblyName>HackathonWeb.Feature.Media</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc.Analytics">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Mvc.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Accessibility">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Accessibility.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Analytics">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Compliancy">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Compliancy.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Composites">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Composites.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.ContentTokens">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.ContentTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Context">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Context.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.CreativeExchange">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.CreativeExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.DeviceResolver">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.DeviceResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Engagement">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Engagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.ErrorHandling">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.ErrorHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Events">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Forms">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.GenericMetaRendering">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.GenericMetaRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Json">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.LayoutServices.Integration">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.LayoutServices.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Maps">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Media">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Navigation">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Overlays">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Overlays.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.PageContent">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.PageContent.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.PageStructure">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.PageStructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Redirects">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Redirects.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Search">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Security">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.SiteMetadata">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.SiteMetadata.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Social">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Social.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.StickyNotes">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.StickyNotes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Taxonomy">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Feature.Taxonomy.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Abstractions">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Caching">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Common">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.ContentValidation">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.ContentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.DynamicPlaceholders">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.DynamicPlaceholders.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Editing">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Editing.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Geospatial">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Geospatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Grid">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Grid.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Installer">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Installer.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.IoC">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.IoC.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.JsonVariants">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.JsonVariants.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.LocalDatasources">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.LocalDatasources.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.MarkupDecorator">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.MediaRequestHandler">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.MediaRequestHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Multisite">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Multisite.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Mvc">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.PlaceholderSettings">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.PlaceholderSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Presentation">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Publication">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Publication.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.RenderingVariants">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.RenderingVariants.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Scaffolding">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Scaffolding.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Search">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Search.Providers.Azure">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Search.Providers.Azure.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Search.Providers.Lucene">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Search.Providers.Lucene.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Search.Providers.Solr">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Search.Providers.Solr.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Taxonomy">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Taxonomy.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Theming">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Theming.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.TokenResolution">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.TokenResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Upgrade">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Upgrade.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Variants.Abstractions">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.Variants.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.VersionSpecific">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.VersionSpecific.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.XConnect.Integration">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.XA.Foundation.XConnect.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pipelines\IoC\RegisterMediaServices.cs" />
+    <Compile Include="Controllers\MediaImageController.cs" />
+    <Compile Include="Models\ImageRenderingModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ImageRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Media\Image.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature.Media.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Views\web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Start\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58997</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58997/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
