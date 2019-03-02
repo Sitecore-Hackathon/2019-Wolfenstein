@@ -27,19 +27,18 @@ The name of tenant node have to be Hackathon, then the website name have to be S
 
 ## Usage
 
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
+Component working with face recognitions and gray scale
+![Face Recognitions and Gray Scale](images/face_gray.png)
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+Component working with Invert and Median
+![Invert and Median](images/invert_median.png)
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
+Component working with different kind of textures
+![Texture](images/texture.png)
 
-You can embed images of different formats too:
+Component working with resize and rotate
+![Face Recognitions and Gray Scale](images/resize.png)
 
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
 
 ## Video
 
