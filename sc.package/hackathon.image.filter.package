@@ -99,7 +99,21 @@
       <Name>Items</Name>
     </xitems>
     <xfiles>
-      <Entries />
+      <Entries>
+        <x-item>/App_Config/Include/Feature/Feature.Media.config</x-item>
+        <x-item>/bin/Accord.dll</x-item>
+        <x-item>/bin/Accord.Imaging.dll</x-item>
+        <x-item>/bin/Accord.MachineLearning.dll</x-item>
+        <x-item>/bin/Accord.Math.Core.dll</x-item>
+        <x-item>/bin/Accord.Math.dll</x-item>
+        <x-item>/bin/Accord.Statistics.dll</x-item>
+        <x-item>/bin/Accord.Video.dll</x-item>
+        <x-item>/bin/Accord.Vision.dll</x-item>
+        <x-item>/bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll</x-item>
+        <x-item>/bin/Microsoft.Extensions.DependencyInjection.Abstractions.xml</x-item>
+        <x-item>/bin/HackathonWeb.Feature.Media.dll</x-item>
+        <x-item>/bin/HackathonWeb.Website.dll</x-item>
+      </Entries>
       <Converter>
         <FileToEntryConverter>
           <Root />
