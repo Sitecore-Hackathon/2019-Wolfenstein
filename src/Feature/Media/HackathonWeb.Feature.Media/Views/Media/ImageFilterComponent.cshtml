@@ -8,11 +8,11 @@
         @Model.MessageIsEmpty
         
         <h2>
-            Image here
+            <img src="@Url.Action("GetFile", new { image = Model.OriginalImage})" />
         </h2>
         
         <p>
-            @Model.Image
+            <img src="@Url.Action("GetFile", new { image = Model.FilterImage})" />
         </p>
 
         @if (Model.HasImageCaption || (!Model.HasImageCaption && Html.Sxa().IsEdit))

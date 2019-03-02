@@ -80,7 +80,7 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
         public static void SaveImage(Bitmap image, string fileName, string alternateText)
         {
             var memoryStream = new MemoryStream();
-            image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
+            image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Jpeg);
 
 
             
@@ -103,7 +103,7 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
             }
         }
 
-        public byte[] ConvertToBase64(Bitmap image)
+        public static byte[] ConvertImageToArray(Bitmap image)
         {
             MemoryStream memoryStream = new MemoryStream();
             image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Jpeg);

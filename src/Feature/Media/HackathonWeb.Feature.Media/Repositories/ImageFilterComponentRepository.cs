@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System;
+using System.Web;
 using System.Web.Mvc;
 using HackathonWeb.Feature.Media.Interfaces;
 using HackathonWeb.Feature.Media.Models;
@@ -27,8 +28,15 @@ namespace HackathonWeb.Feature.Media.Repositories
 
             model.HasImageCaption = int.Parse(item.Fields["HasImageCaption"].Value) == 1;
             model.HasImageDescription = int.Parse(item.Fields["HasImageDescription"].Value) == 1;
-            model.Image = new MvcHtmlString(item.Fields["Image"].Value);
+            
+            model.Id = item.Fields["Image"].ID;
+            var itemImage = Sitecore.Context.Database.GetItem(model.Id);
+            var mediaItem = new Sitecore.Data.Items.MediaItem(itemImage);
+            var image = new System.Drawing.Bitmap(mediaItem.GetMediaStream());
+            model.OriginalImage = image;
             model.Filter = item.Fields["Filter"].Value;
+            var filterParameters = new Pipelines.ML.ImageFilterParameters { Image = image, filter = (Pipelines.ML.EnumImageFilter)Enum.Parse(typeof(Pipelines.ML.EnumImageFilter), model.Filter)};
+            model.FilterImage = Pipelines.ML.ImagePreprocessing.ApplyFilter(filterParameters);
         }
     }
 }
