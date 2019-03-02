@@ -1,5 +1,18 @@
 ﻿
 namespace HackathonWeb.Feature.Media.Pipelines.ML
 {
-    public enum EnumImageFilter { Median, GrayScale, Invert, TexturedHue, TextureSepia, Rotate, Resize, FaceDetection };
+    /// <summary>
+    /// Enum for available image filters
+    /// </summary>
+    public enum EnumImageFilter
+    {
+        Median,
+        GrayScale,
+        Invert,
+        TexturedHue,
+        TextureSepia,
+        Rotate,
+        Resize,
+        FaceDetection
+    };
 }
