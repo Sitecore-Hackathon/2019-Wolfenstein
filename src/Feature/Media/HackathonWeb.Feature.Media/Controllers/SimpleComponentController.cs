@@ -15,7 +15,7 @@ namespace HackathonWeb.Feature.Media.Controllers
 
         public ActionResult SimpleComponentIndex()
         {
-            return PartialView("/Media/SimpleComponent", this.GetModel());
+            return PartialView("~/Views/Media/SimpleComponent.cshtml", this.GetModel());
         }
 
         protected override object GetModel()
