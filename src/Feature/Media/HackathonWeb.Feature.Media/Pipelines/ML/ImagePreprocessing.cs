@@ -3,6 +3,7 @@ using Accord.Imaging.Textures;
 using Accord.Vision.Detection;
 using Sitecore.Configuration;
 using Sitecore.SecurityModel;
+using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
@@ -97,6 +98,7 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
             MemoryStream memoryStream = new MemoryStream();
             image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
 
+
             
             var options = new Sitecore.Resources.Media.MediaCreatorOptions
             {
@@ -115,6 +117,15 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
                 var creator = new Sitecore.Resources.Media.MediaCreator();
                 creator.CreateFromStream(memoryStream, fileName, options);
             }
+        }
+
+        public byte[] ConvertToBase64(Bitmap image)
+        {
+            MemoryStream memoryStream = new MemoryStream();
+            image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Jpeg);
+            var bitmapBytes = memoryStream.ToArray();           
+            return bitmapBytes;
+
         }
     }
 }
