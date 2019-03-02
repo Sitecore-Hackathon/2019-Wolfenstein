@@ -1,15 +1,15 @@
 <project site="sc910.sc" format="Zip Package" targetfilefolder="wwwroot">
   <Metadata>
     <metadata>
-      <PackageName />
-      <Author />
-      <Version />
+      <PackageName>hackathon.image.filter</PackageName>
+      <Author>Jorge Cardenas, Ramiro Batallas, Santiago Jaramillo</Author>
+      <Version>0.0.1</Version>
       <Revision />
       <License />
       <Comment />
       <Attributes />
       <Readme />
-      <Publisher />
+      <Publisher>Verndale</Publisher>
       <PostStep />
       <PackageID />
     </metadata>
@@ -18,17 +18,50 @@
   <Sources>
     <xitems>
       <Entries>
-        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/{80B25566-EAD1-461B-840C-F1B221B310D2}/invariant/0</x-item>
-        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Face Detection/{DE0A9A04-5166-4D60-93CC-5B67D09E1E47}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/{65EB3D0F-9936-4864-BCAB-EBC605C2F894}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/Data/{DBEB390A-0C70-4004-B12A-7A3823FE8C92}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/Overlays/{1557BB1D-089D-4D54-9E10-48F52674089E}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Devices/Default/{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Branches/Foundation/Experience Accelerator/Scaffolding/Site/{B90549B5-C997-4D6B-B102-C9AB82528974}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/Foundation/Experience Accelerator/MVC/MVC Layout/{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}/invariant/0</x-item>
         <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Gray/{7F5CAFB5-8F95-48F3-9915-9D244E601FF2}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Media/Reusable Image/{69D0A00E-FF06-4B17-BE59-BED330577680}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Devices/JSON/{0B4A31C9-712D-4578-A396-2DDC0F34B63A}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/Feature/Experience Accelerator/JSON/JSON Layout/{72C595AD-68BB-44BC-B5CD-2A857039515F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Branches/Foundation/Experience Accelerator/Scaffolding/Site/$name/Home/{92EB9EFB-88D4-4089-82BE-AAD92D4FA24E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Project/Hackathon/Home/{0963EC90-906C-4F55-B808-E62CA43E3A5B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Project/Hackathon/Home/__Standard Values/{6A215B96-E554-40E7-8CB1-B8E27FCD972A}/invariant/0</x-item>
         <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Invert/{9E1D394A-D29F-460B-A743-AF9CDBDECF01}/invariant/0</x-item>
         <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Median/{20C2E4EE-1661-41C7-9CE3-3139F8CD70D1}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Texture Sepia/{624B1DF9-22CB-48FA-B86E-1FBEF3B47E01}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Face Detection/{DE0A9A04-5166-4D60-93CC-5B67D09E1E47}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Textured Hue/{4BB678F4-E030-41AF-9290-39629DA34E21}/invariant/0</x-item>
         <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Resize/{AF374C3B-30B3-47D8-B9F2-9961AF2F4648}/invariant/0</x-item>
         <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Rotate/{DB9F2A5E-BE6E-4ED7-B6E8-93503285280B}/invariant/0</x-item>
-        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Texture Sepia/{624B1DF9-22CB-48FA-B86E-1FBEF3B47E01}/invariant/0</x-item>
-        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/Image Filter Textured Hue/{4BB678F4-E030-41AF-9290-39629DA34E21}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/Experience Accelerator/Local Datasources/Page Data/{1C82E550-EBCD-4E5D-8ABD-D50D0809541E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/Experience Accelerator/Local Datasources/Page Data/__Standard Values/{25FD2196-0130-49B8-8E51-079FA5032143}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Overlays/OverlayFolderTemplate/{D7BFFBE5-DAD8-4137-85DE-28013313F72F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Overlays/OverlayFolderTemplate/__Standard Values/{9109BC60-FFEA-4AE6-85F6-8D1D9E65B575}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Presentation/Available Renderings/Media/{28A65635-2408-4CB9-8FF2-03F0B672B9EF}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/{32566F0E-7686-45F1-A12F-D7260BD78BC3}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Branches/Feature/Experience Accelerator/Media/Available Media Renderings/$name/{F904AFE6-7760-45A1-9535-1D9BEE5CCF0D}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Media/File List/{67B0BBCC-6926-4468-84E0-55B6A32B8BB6}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Media/Flash/{A9D5C029-AB30-40CC-B619-C74AA72D4BD6}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Media/Gallery/{DC7CD1BE-7E89-4D96-B52B-72653ADF82B1}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Media/Image/{4A0D4E0B-BC20-4F2E-BD84-A4BD35834E86}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Media/Media Link/{B3D80586-1081-4C7C-835F-DD75B2681CC8}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Media/Playlist/{F16CE601-EECF-4DFC-B278-DE5F9562551B}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Media/Video/{3C84ED23-7591-45E0-8850-1AE96D1342B1}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/Experience Accelerator/Presentation/Available Renderings/Available Renderings/{76DA0A8D-FC7E-42B2-AF1E-205B49E43F98}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Branches/Feature/Experience Accelerator/Media/Available Media Renderings/{C9652344-CACE-456B-BB95-BCAC715DF675}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Media/{0F5A6357-2DBA-4820-A03E-7240F3CED16F}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Media/Image Filter Component/{F0A1E44E-777C-4B84-A362-85F4D4CD2F5D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Layout/Renderings/Rendering Folder/{7EE0975B-0698-493E-B3A2-0B2EF33D0522}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Layout/Renderings/Rendering Folder/__Standard Values/{DDF66FE1-80DD-4DA0-8D66-CB2F815CE9F5}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/{B46E634F-736A-44DF-80CA-3087A011E8ED}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/{B1BA846C-BDE8-43B7-B189-DC795D4E73A9}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/{6B96D60E-8F6A-4F3D-BE7A-2EDFDE3EF069}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/__Standard Values/{F054E068-188F-4074-A309-0B79B9F6A853}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/HasImageCaption/{F1595CB5-B167-43B3-8631-8BFE205AD08D}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/HasImageDescription/{7BBE8EF8-7396-45C0-8214-1AC38C7B05CB}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/Image/{4D208A4A-8084-46A1-9988-7FCE6018923A}/invariant/0</x-item>
@@ -36,35 +69,15 @@
         <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/Angle/{DC124062-C675-4209-8585-38458C19E891}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/Height/{2D1F3937-198E-488C-BA20-0C329D0E3B8B}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/Parameters/Width/{D45AEAB5-662F-4A18-B180-48DA5C85D539}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Feature/Media/Image Filter Template/__Standard Values/{F054E068-188F-4074-A309-0B79B9F6A853}/invariant/0</x-item>
-        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Family/{22056BA9-DF25-4E7A-8C9C-27E427FF2654}/invariant/0</x-item>
-        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image4/{B4783AD6-16D7-44F9-A60D-E7594F0291CE}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Data/Media/{80B25566-EAD1-461B-840C-F1B221B310D2}/invariant/0</x-item>
         <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image3/{80CE5F96-5C69-406C-A7B4-B393E4FFB113}/invariant/0</x-item>
         <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/ImageNoise/{D1C1D007-9F44-446C-A60E-0309ED2C1907}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image2/{F7401F10-C632-4666-8723-1A32E8C492F2}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Family/{22056BA9-DF25-4E7A-8C9C-27E427FF2654}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image6/{229EDF0E-ACAA-4731-8C5E-DE5460BDAEB9}/invariant/0</x-item>
         <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image7/{B2876B1A-FEC5-4D02-AF53-34AE58D7F118}/invariant/0</x-item>
         <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image5/{DCE45CC3-7EDA-4A9C-86D6-6890C4C90A0D}/invariant/0</x-item>
-        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image2/{F7401F10-C632-4666-8723-1A32E8C492F2}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Renderings/Feature/Media/{0F5A6357-2DBA-4820-A03E-7240F3CED16F}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Renderings/Feature/Media/Image Filter Component/{F0A1E44E-777C-4B84-A362-85F4D4CD2F5D}/invariant/0</x-item>
-        <x-item>/master/sitecore/content/Hackathon/SXA Website/Presentation/Available Renderings/Media/{28A65635-2408-4CB9-8FF2-03F0B672B9EF}/invariant/0</x-item>
-        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image6/{229EDF0E-ACAA-4731-8C5E-DE5460BDAEB9}/invariant/0</x-item>
-        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/{65EB3D0F-9936-4864-BCAB-EBC605C2F894}/invariant/0</x-item>
-        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/Data/{DBEB390A-0C70-4004-B12A-7A3823FE8C92}/invariant/0</x-item>
-        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/Overlays/{1557BB1D-089D-4D54-9E10-48F52674089E}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Devices/Default/{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Branches/Foundation/Experience Accelerator/Scaffolding/Site/{B90549B5-C997-4D6B-B102-C9AB82528974}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Layouts/Foundation/Experience Accelerator/MVC/MVC Layout/{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Media/Reusable Image/{69D0A00E-FF06-4B17-BE59-BED330577680}/invariant/0</x-item>
-        <x-item>/master/sitecore/system/Settings/Feature/Experience Accelerator/Bootstrap 4/Bootstrap 4 Grid Definition/Extra small/Size/12/{908E2BC6-C110-4ED7-AF39-7EEACBB31A34}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Devices/JSON/{0B4A31C9-712D-4578-A396-2DDC0F34B63A}/invariant/0</x-item>
-        <x-item>/master/sitecore/layout/Layouts/Feature/Experience Accelerator/JSON/JSON Layout/{72C595AD-68BB-44BC-B5CD-2A857039515F}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Branches/Foundation/Experience Accelerator/Scaffolding/Site/$name/Home/{92EB9EFB-88D4-4089-82BE-AAD92D4FA24E}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Project/Hackathon/Home/{0963EC90-906C-4F55-B808-E62CA43E3A5B}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Project/Hackathon/Home/__Standard Values/{6A215B96-E554-40E7-8CB1-B8E27FCD972A}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Foundation/Experience Accelerator/Local Datasources/Page Data/{1C82E550-EBCD-4E5D-8ABD-D50D0809541E}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Foundation/Experience Accelerator/Local Datasources/Page Data/__Standard Values/{25FD2196-0130-49B8-8E51-079FA5032143}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Overlays/OverlayFolderTemplate/{D7BFFBE5-DAD8-4137-85DE-28013313F72F}/invariant/0</x-item>
-        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Overlays/OverlayFolderTemplate/__Standard Values/{9109BC60-FFEA-4AE6-85F6-8D1D9E65B575}/invariant/0</x-item>
+        <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image4/{B4783AD6-16D7-44F9-A60D-E7594F0291CE}/invariant/0</x-item>
       </Entries>
       <SkipVersions>False</SkipVersions>
       <Converter>

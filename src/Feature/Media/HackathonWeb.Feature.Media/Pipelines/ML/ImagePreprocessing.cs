@@ -57,6 +57,7 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
             // return new image
             return response;
         }
+
         /// <summary>
         /// This method helps to face detection
         /// </summary>
@@ -82,6 +83,7 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
             result.Rectangles = faces;
             return result;
         }
+
         /// <summary>
         /// Add names to image were is a face detected
         /// </summary>
@@ -104,6 +106,7 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
             // return new image
             return bmp;
         }
+
         /// <summary>
         /// save image inside media gallery
         /// </summary>
