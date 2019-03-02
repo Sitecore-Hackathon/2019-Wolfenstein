@@ -7,17 +7,13 @@
     <div class="component-content">
         @Model.MessageIsEmpty
         
-        @if (Model.LinkItem != null && Model.LinkItem.TargetItem != null)
-        {
-            <a href="@Model.LinkItem.TargetUrl" target="@Model.LinkItem.Target">
-                @*@{ Html.RenderPartial("ImageContent", Model); }*@
-            </a>
-        }
-        else
-        {
-            //Html.RenderPartial("ImageContent", Model);
-            <p>Testing</p>
-        }
+        <h2>
+            Image here
+        </h2>
+        
+        <p>
+            @Model.Image
+        </p>
 
         @if (Model.HasImageCaption || (!Model.HasImageCaption && Html.Sxa().IsEdit))
         {
