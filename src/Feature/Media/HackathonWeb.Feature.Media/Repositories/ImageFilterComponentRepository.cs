@@ -29,7 +29,7 @@ namespace HackathonWeb.Feature.Media.Repositories
         /// <summary>
         /// Fill Image Filter Properties from Rendering Data source, if is present
         /// </summary>
-        /// <param name="model"></param>
+        /// <param name="model">Image Filter Component model</param>
         private void FillImageFilterProperties(ImageFilterComponentModel model)
         {
             if (string.IsNullOrEmpty(model?.Rendering?.DataSource))
