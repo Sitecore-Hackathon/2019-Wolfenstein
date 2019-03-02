@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 using System.Web.Mvc;
 using HackathonWeb.Feature.Media.Interfaces;
 using Sitecore.XA.Foundation.Mvc.Controllers;

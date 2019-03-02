@@ -3,7 +3,6 @@ using Accord.Imaging.Textures;
 using Accord.Vision.Detection;
 using Sitecore.Configuration;
 using Sitecore.SecurityModel;
-using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
@@ -14,8 +13,8 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
     {
         public static Bitmap ApplyFilter(ImageFilterParameters imageFilterParameters)
         {
-            dynamic filterProcessor = null;
-            switch (imageFilterParameters.filter)
+            dynamic filterProcessor;
+            switch (imageFilterParameters.Filter)
             {
                 case EnumImageFilter.GrayScale:
                     filterProcessor = new Grayscale(0.2125, 0.7154, 0.0721);
@@ -38,6 +37,8 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
                     var finalHeight = imageFilterParameters.Height ?? imageFilterParameters.Image.Height;
                     filterProcessor = new ResizeBicubic(finalWidth, finalHeight);
                     break;
+                case EnumImageFilter.FaceDetection:
+                    return FaceDetection(imageFilterParameters.Image).ImageResult;
                 default:
                     filterProcessor = new TexturedFilter(new CloudsTexture(), new GrayscaleBT709(), new Sepia());
                     break;
@@ -53,7 +54,7 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
             var detector = new HaarObjectDetector(cascade, minSize: 100, searchMode: ObjectDetectorSearchMode.NoOverlap);
             var bmp = Accord.Imaging.Image.Clone(image);
             var faces = detector.ProcessFrame(bmp);
-            var objectMarker = new RectanglesMarker(Color.Red) {Rectangles = faces};
+            var objectMarker = new RectanglesMarker(Color.Red) { Rectangles = faces };
 
             var resultImage = objectMarker.Apply(image); // overwrite the frame
             result.ImageResult = resultImage;
@@ -81,8 +82,6 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
         {
             var memoryStream = new MemoryStream();
             image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Jpeg);
-
-
             
             var options = new Sitecore.Resources.Media.MediaCreatorOptions
             {
@@ -94,8 +93,7 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
                 Database = Factory.GetDatabase("master"),
                 AlternateText = alternateText
             };
-
-
+            
             using (new SecurityDisabler())
             {
                 var creator = new Sitecore.Resources.Media.MediaCreator();
@@ -107,9 +105,8 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
         {
             MemoryStream memoryStream = new MemoryStream();
             image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Jpeg);
-            var bitmapBytes = memoryStream.ToArray();           
+            var bitmapBytes = memoryStream.ToArray();
             return bitmapBytes;
-
         }
     }
 }

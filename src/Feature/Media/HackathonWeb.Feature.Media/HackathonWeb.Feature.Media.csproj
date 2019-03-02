@@ -319,21 +319,16 @@
   <ItemGroup>
     <Compile Include="Controllers\ImageFilterComponentController.cs" />
     <Compile Include="Interfaces\IImageFilterComponentRepository.cs" />
-    <Compile Include="Interfaces\ISimpleComponentRepository.cs" />
     <Compile Include="Models\ImageFilterComponentModel.cs" />
     <Compile Include="Pipelines\IoC\RegisterMediaServices.cs" />
-    <Compile Include="Controllers\SimpleComponentController.cs" />
-    <Compile Include="Models\SimpleComponentModel.cs" />
     <Compile Include="Pipelines\ML\EnumImageFilter.cs" />
     <Compile Include="Pipelines\ML\FaceDetectionResult.cs" />
     <Compile Include="Pipelines\ML\ImageFilterParameters.cs" />
     <Compile Include="Pipelines\ML\ImagePreprocessing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ImageFilterComponentRepository.cs" />
-    <Compile Include="Repositories\SimpleComponentRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Media\SimpleComponent.cshtml" />
     <Content Include="App_Config\Include\Feature\Feature.Media.config" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
