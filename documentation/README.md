@@ -1,10 +1,7 @@
 # Documentation
 
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
+Here you can find the information about our package, how to install it and configure it.
 
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
 
 ## Summary
 
@@ -14,19 +11,19 @@ The purpose of this module is allow to the final user add images and edit them, 
 
 ## Pre-requisites
 
-Download this packages
--Sitecore PowerShell Extensions-5.0.zip
+Download this packages: </br>
+-Sitecore PowerShell Extensions-5.0.zip </br>
 -Sitecore Experience Accelerator 1.8 rev. 181112 for 9.1.zip
 
 ## Installation
 
-Install these packages in the same order listed above. then install this package in order to configurare our module.
+Install these packages in the same order listed above. then install this package in order to configurare our module.</br>
 -hackathon.image.filter.zip
 
 ## Configuration
 
-once both packages are installed, you must insert Tenant site in the content node and then configure it following the assistant.
-The name of tenant node have to be Hackathon, then the website name have to be SAX Website.
+Once both packages are installed, you must insert Tenant site in the content node and then configure it following the assistant.
+The name of tenant node have to be Hackathon, then the website name have to be SXA Website.
 
 ## Usage
 
