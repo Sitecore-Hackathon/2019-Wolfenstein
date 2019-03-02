@@ -8,7 +8,7 @@ namespace HackathonWeb.Feature.Media.Repositories
     {
         public override IRenderingModelBase GetModel()
         {
-            SimpleComponentModel model = new SimpleComponentModel();
+            var model = new SimpleComponentModel();
 
             FillBaseProperties(model);
             model.Title = GetTitle();
@@ -18,7 +18,7 @@ namespace HackathonWeb.Feature.Media.Repositories
 
         private string GetTitle()
         {
-            return "CHUCHA";
+            return "WORKING";
         }
     }
 }

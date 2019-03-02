@@ -1,0 +1,50 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model HackathonWeb.Feature.Media.Models.ImageFilterComponentModel
+
+<div @Html.Sxa().Component("image", Model.Attributes)>
+    <div class="component-content">
+        @Model.MessageIsEmpty
+        
+        @if (Model.LinkItem != null && Model.LinkItem.TargetItem != null)
+        {
+            <a href="@Model.LinkItem.TargetUrl" target="@Model.LinkItem.Target">
+                @*@{ Html.RenderPartial("ImageContent", Model); }*@
+            </a>
+        }
+        else
+        {
+            //Html.RenderPartial("ImageContent", Model);
+            <p>Testing</p>
+        }
+
+        @if (Model.HasImageCaption || (!Model.HasImageCaption && Html.Sxa().IsEdit))
+        {
+            <span class="image-caption">
+                @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+                {
+                    @Html.Sitecore().Field("ImageCaption", Model.GetRenderingWebEditingParams())
+                }
+                else
+                {
+                    @Html.Sitecore().Field("ImageCaption")
+                }
+            </span>
+        }
+
+        @if (Model.HasImageDescription || (!Model.HasImageDescription && Html.Sxa().IsEdit))
+        {
+            <span class="image-caption">
+                @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+                {
+                    @Html.Sitecore().Field("ImageDescription", Model.GetRenderingWebEditingParams())
+                }
+                else
+                {
+                    @Html.Sitecore().Field("ImageDescription")
+                }
+            </span>
+        }
+    </div>
+</div>
