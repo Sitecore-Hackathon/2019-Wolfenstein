@@ -241,7 +241,7 @@ gulp.task("Publish-Assemblies", function () {
 
 gulp.task("Publish-Dependencies", function () {
     var root = "./";
-    var binFiles = root + "/src/**/**/**/bin/{Microsoft.Extensions.DependencyInjection,Glass,Castle,SimpleInjector,DynamicPlaceholders}*.{dll,pdb}";
+    var binFiles = root + "/src/**/**/**/bin/{Microsoft.Extensions.DependencyInjection,Glass,Castle,SimpleInjector,DynamicPlaceholders,Accord}*.{dll,pdb}";
     var destination = config.websiteRoot + "/bin/";
     return gulp.src(binFiles, { base: root })
         .pipe(rename({ dirname: "" }))

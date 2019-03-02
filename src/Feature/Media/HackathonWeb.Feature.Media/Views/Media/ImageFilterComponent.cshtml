@@ -1,5 +1,6 @@
 ﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
 @using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using HackathonWeb.Feature.Media.Pipelines.ML
 
 @model HackathonWeb.Feature.Media.Models.ImageFilterComponentModel
 
@@ -10,14 +11,14 @@
         @if (Model.OriginalImage != null)
         {
             <h2>
-                <img src="@Url.Action("GetFile", new { image = Model.OriginalImage})" />
+                <img src="@Url.Action("GetFile", new { id = Convert.ToBase64String(ImagePreprocessing.ConvertImageToArray(Model.OriginalImage))})" />
             </h2>
         }
 
         @if (Model.FilterImage != null)
         {
             <p>
-                <img src="@Url.Action("GetFile", new { image = Model.FilterImage})" />
+                <img src="@Url.Action("GetFile", new { id = Convert.ToBase64String(ImagePreprocessing.ConvertImageToArray( Model.FilterImage))})" />
             </p>
         }
 

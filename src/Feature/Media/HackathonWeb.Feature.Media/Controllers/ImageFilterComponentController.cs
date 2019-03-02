@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Web.Mvc;
 using HackathonWeb.Feature.Media.Interfaces;
 using Sitecore.XA.Foundation.Mvc.Controllers;
@@ -21,13 +22,15 @@ namespace HackathonWeb.Feature.Media.Controllers
 
         protected override object GetModel()
         {
-            return _repository.GetModel();
+            var model = _repository.GetModel();
+            return model;
         }
 
-        public ActionResult GetFile(Bitmap image)
+        public ActionResult GetFile(string id)
         {
-            var array = Pipelines.ML.ImagePreprocessing.ConvertImageToArray(image);
-            return File(array, "image/jpeg");
+            byte[] imageBytes = Convert.FromBase64String(id);
+            
+            return File(imageBytes, "image/jpeg");
         }
     }
 }
