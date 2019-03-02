@@ -6,14 +6,20 @@
 <div @Html.Sxa().Component("image", Model.Attributes)>
     <div class="component-content">
         @Model.MessageIsEmpty
-        
-        <h2>
-            <img src="@Url.Action("GetFile", new { image = Model.OriginalImage})" />
-        </h2>
-        
-        <p>
-            <img src="@Url.Action("GetFile", new { image = Model.FilterImage})" />
-        </p>
+
+        @if (Model.OriginalImage != null)
+        {
+            <h2>
+                <img src="@Url.Action("GetFile", new { image = Model.OriginalImage})" />
+            </h2>
+        }
+
+        @if (Model.FilterImage != null)
+        {
+            <p>
+                <img src="@Url.Action("GetFile", new { image = Model.FilterImage})" />
+            </p>
+        }
 
         @if (Model.HasImageCaption || (!Model.HasImageCaption && Html.Sxa().IsEdit))
         {

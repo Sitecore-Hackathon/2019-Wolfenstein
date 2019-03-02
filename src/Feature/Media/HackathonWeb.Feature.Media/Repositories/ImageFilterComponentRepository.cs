@@ -23,13 +23,17 @@ namespace HackathonWeb.Feature.Media.Repositories
         }
 
         private void FillImageFilterProperties(ImageFilterComponentModel model)
-        {
+        { 
+            if(model?.Rendering?.DataSource == null)
+            {
+                return;
+            }
+                
             var item = Sitecore.Context.Database.GetItem(new Sitecore.Data.ID(model.Rendering.DataSource));
-
             model.HasImageCaption = int.Parse(item.Fields["HasImageCaption"].Value) == 1;
-            model.HasImageDescription = int.Parse(item.Fields["HasImageDescription"].Value) == 1;
-            
-            model.Id = item.Fields["Image"].ID;
+            model.HasImageDescription = int.Parse(item.Fields["HasImageDescription"].Value) == 1;            
+
+            model.Id = new Sitecore.Data.ID(item.Fields["Image"].Value.Replace("<image mediaid=\"", "").Replace("\" />", ""));
             var itemImage = Sitecore.Context.Database.GetItem(model.Id);
             var mediaItem = new Sitecore.Data.Items.MediaItem(itemImage);
             var image = new System.Drawing.Bitmap(mediaItem.GetMediaStream());
