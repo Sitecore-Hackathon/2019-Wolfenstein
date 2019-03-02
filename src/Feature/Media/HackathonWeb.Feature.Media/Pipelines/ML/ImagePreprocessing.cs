@@ -9,7 +9,6 @@ using System.IO;
 
 namespace HackathonWeb.Feature.Media.Pipelines.ML
 {
-    public enum EnumImageFilter { Median, GrayScale, Invert, TexturedHue, TextureSepia, Rotate, Resize };
     public class ImagePreprocessing
     {
         public static Bitmap ApplyFilter(ImageFilterParameters imageFilterParameters)
@@ -27,15 +26,15 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
                     filterProcessor = new Median();
                     break;
                 case EnumImageFilter.Rotate:
-                    var finalAngle = imageFilterParameters.Angle.HasValue ? imageFilterParameters.Angle.Value : 0;
+                    var finalAngle = imageFilterParameters.Angle ?? 0;
                     filterProcessor = new RotateBicubic(finalAngle);
                     break;
                 case EnumImageFilter.TexturedHue:
                     filterProcessor = new TexturedFilter(new CloudsTexture(), new HueModifier(50));
                     break;
                 case EnumImageFilter.Resize:
-                    var finalWidth = imageFilterParameters.Width.HasValue ? imageFilterParameters.Width.Value : imageFilterParameters.Image.Width;
-                    var finalHeight = imageFilterParameters.Heigh.HasValue ? imageFilterParameters.Heigh.Value : imageFilterParameters.Image.Height;
+                    var finalWidth = imageFilterParameters.Width ?? imageFilterParameters.Image.Width;
+                    var finalHeight = imageFilterParameters.Height ?? imageFilterParameters.Image.Height;
                     filterProcessor = new ResizeBicubic(finalWidth, finalHeight);
                     break;
                 default:
@@ -49,38 +48,23 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
         public static FaceDetectionResult FaceDetection(Bitmap image)
         {
             var result = new FaceDetectionResult();
-            
             var cascade = new Accord.Vision.Detection.Cascades.FaceHaarCascade();
-
-            var detector = new HaarObjectDetector(cascade, minSize: 100,
-                searchMode: ObjectDetectorSearchMode.NoOverlap);
-
-            
-            Bitmap bmp = Accord.Imaging.Image.Clone(image);
-
-            
-            Rectangle[] faces = detector.ProcessFrame(bmp);
-
-            var objectMarker = new RectanglesMarker(Color.Red);
-            objectMarker.Rectangles = faces;
-
-
+            var detector = new HaarObjectDetector(cascade, minSize: 100, searchMode: ObjectDetectorSearchMode.NoOverlap);
+            var bmp = Accord.Imaging.Image.Clone(image);
+            var faces = detector.ProcessFrame(bmp);
+            var objectMarker = new RectanglesMarker(Color.Red) {Rectangles = faces};
 
             var resultImage = objectMarker.Apply(image); // overwrite the frame
-
             result.ImageResult = resultImage;
-            result.TotalFacesDetected = (faces == null) ? 0 : faces.Length;
+            result.TotalFacesDetected = faces?.Length ?? 0;
             result.Rectangles = faces;
             return result;
         }
 
         public static Bitmap AddTextToImage(Bitmap bmp, Rectangle rectangle, string text)
         {
-
-
-            RectangleF rectf = new RectangleF(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height);
-
-            Graphics g = Graphics.FromImage(bmp);
+            var rectf = new RectangleF(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height);
+            var g = Graphics.FromImage(bmp);
 
             g.SmoothingMode = SmoothingMode.AntiAlias;
             g.InterpolationMode = InterpolationMode.HighQualityBicubic;
@@ -94,7 +78,7 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
 
         public static void SaveImage(Bitmap image, string fileName, string alternateText)
         {
-            MemoryStream memoryStream = new MemoryStream();
+            var memoryStream = new MemoryStream();
             image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
 
             

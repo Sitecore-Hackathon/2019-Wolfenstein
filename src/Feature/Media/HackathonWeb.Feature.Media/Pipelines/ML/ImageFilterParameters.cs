@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Web;
+﻿using System.Drawing;
 
 namespace HackathonWeb.Feature.Media.Pipelines.ML
 {
@@ -11,7 +7,7 @@ namespace HackathonWeb.Feature.Media.Pipelines.ML
         public EnumImageFilter filter { get; set; }
         public Bitmap Image { get; set; }
         public int? Angle { get; set; }
-        public int? Heigh { get; set; }
+        public int? Height { get; set; }
         public int? Width { get; set; }
     }
 }
