@@ -19,8 +19,6 @@
     <xitems>
       <Entries>
         <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/{65EB3D0F-9936-4864-BCAB-EBC605C2F894}/invariant/0</x-item>
-        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/Data/{DBEB390A-0C70-4004-B12A-7A3823FE8C92}/invariant/0</x-item>
-        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/Overlays/{1557BB1D-089D-4D54-9E10-48F52674089E}/invariant/0</x-item>
         <x-item>/master/sitecore/layout/Devices/Default/{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/Branches/Foundation/Experience Accelerator/Scaffolding/Site/{B90549B5-C997-4D6B-B102-C9AB82528974}/invariant/0</x-item>
         <x-item>/master/sitecore/layout/Layouts/Foundation/Experience Accelerator/MVC/MVC Layout/{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}/invariant/0</x-item>
@@ -78,6 +76,8 @@
         <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image7/{B2876B1A-FEC5-4D02-AF53-34AE58D7F118}/invariant/0</x-item>
         <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image5/{DCE45CC3-7EDA-4A9C-86D6-6890C4C90A0D}/invariant/0</x-item>
         <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image4/{B4783AD6-16D7-44F9-A60D-E7594F0291CE}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/Data/{DBEB390A-0C70-4004-B12A-7A3823FE8C92}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/Overlays/{1557BB1D-089D-4D54-9E10-48F52674089E}/invariant/0</x-item>
       </Entries>
       <SkipVersions>False</SkipVersions>
       <Converter>
