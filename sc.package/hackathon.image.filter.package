@@ -49,6 +49,22 @@
         <x-item>/master/sitecore/content/Hackathon/SXA Website/Presentation/Available Renderings/Media/{28A65635-2408-4CB9-8FF2-03F0B672B9EF}/invariant/0</x-item>
         <x-item>/master/sitecore/media library/Project/Hackathon/SXA Website/Image6/{229EDF0E-ACAA-4731-8C5E-DE5460BDAEB9}/invariant/0</x-item>
         <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/{65EB3D0F-9936-4864-BCAB-EBC605C2F894}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/Data/{DBEB390A-0C70-4004-B12A-7A3823FE8C92}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Hackathon/SXA Website/Home/Overlays/{1557BB1D-089D-4D54-9E10-48F52674089E}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Devices/Default/{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Branches/Foundation/Experience Accelerator/Scaffolding/Site/{B90549B5-C997-4D6B-B102-C9AB82528974}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/Foundation/Experience Accelerator/MVC/MVC Layout/{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Feature/Experience Accelerator/Media/Reusable Image/{69D0A00E-FF06-4B17-BE59-BED330577680}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Feature/Experience Accelerator/Bootstrap 4/Bootstrap 4 Grid Definition/Extra small/Size/12/{908E2BC6-C110-4ED7-AF39-7EEACBB31A34}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Devices/JSON/{0B4A31C9-712D-4578-A396-2DDC0F34B63A}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/Feature/Experience Accelerator/JSON/JSON Layout/{72C595AD-68BB-44BC-B5CD-2A857039515F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Branches/Foundation/Experience Accelerator/Scaffolding/Site/$name/Home/{92EB9EFB-88D4-4089-82BE-AAD92D4FA24E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Project/Hackathon/Home/{0963EC90-906C-4F55-B808-E62CA43E3A5B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Project/Hackathon/Home/__Standard Values/{6A215B96-E554-40E7-8CB1-B8E27FCD972A}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/Experience Accelerator/Local Datasources/Page Data/{1C82E550-EBCD-4E5D-8ABD-D50D0809541E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Foundation/Experience Accelerator/Local Datasources/Page Data/__Standard Values/{25FD2196-0130-49B8-8E51-079FA5032143}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Overlays/OverlayFolderTemplate/{D7BFFBE5-DAD8-4137-85DE-28013313F72F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Feature/Experience Accelerator/Overlays/OverlayFolderTemplate/__Standard Values/{9109BC60-FFEA-4AE6-85F6-8D1D9E65B575}/invariant/0</x-item>
       </Entries>
       <SkipVersions>False</SkipVersions>
       <Converter>
