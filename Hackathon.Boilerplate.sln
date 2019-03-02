@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{17DD5718-6E13-4F2C-9738-B410396D4552}"
 EndProject
@@ -40,6 +40,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Media", "Media", "{77E477F4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonWeb.Feature.Media", "src\Feature\Media\HackathonWeb.Feature.Media\HackathonWeb.Feature.Media.csproj", "{D5B37862-7CFA-4C16-B443-BE146E08C35B}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "HackathonWeb.Feature.MediaTds", "HackathonWeb.Feature.MediaTds\HackathonWeb.Feature.MediaTds.scproj", "{E8904D4C-6416-49A0-A732-B0995F554FA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,12 @@ Global
 		{D5B37862-7CFA-4C16-B443-BE146E08C35B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5B37862-7CFA-4C16-B443-BE146E08C35B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5B37862-7CFA-4C16-B443-BE146E08C35B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8904D4C-6416-49A0-A732-B0995F554FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8904D4C-6416-49A0-A732-B0995F554FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8904D4C-6416-49A0-A732-B0995F554FA7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E8904D4C-6416-49A0-A732-B0995F554FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8904D4C-6416-49A0-A732-B0995F554FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8904D4C-6416-49A0-A732-B0995F554FA7}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +72,7 @@ Global
 		{40DDDC6B-FDD8-485F-B614-E6E11E43FCD9} = {D31DB432-D66C-43CF-B1E2-3E82B18EE95B}
 		{77E477F4-E5D2-4540-8114-A37A50C77904} = {17DD5718-6E13-4F2C-9738-B410396D4552}
 		{D5B37862-7CFA-4C16-B443-BE146E08C35B} = {77E477F4-E5D2-4540-8114-A37A50C77904}
+		{E8904D4C-6416-49A0-A732-B0995F554FA7} = {77E477F4-E5D2-4540-8114-A37A50C77904}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
